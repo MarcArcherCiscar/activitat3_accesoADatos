@@ -26,6 +26,11 @@
             android:name=".registrar_profesor"
             android:parentActivityName=".main_registrar" />
         <activity android:name=".consultar" />
+        <activity android:name=".todos_alumnos" />
+        <activity android:name=".estudiantes_porCiclo" />
+        <activity android:name=".estudiantes_Curso" />
+        <activity android:name=".todos_profesores" />
+        <activity android:name=".buscar_todos"></activity>
     </application>
 
 </manifest>

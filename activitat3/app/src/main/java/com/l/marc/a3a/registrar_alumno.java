@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.l.marc.a3a.base_de_datos.baseDeDatos;
-
 import static com.l.marc.a3a.utilitat.utilitat_alumnes.CAMPO_CICLO;
 import static com.l.marc.a3a.utilitat.utilitat_alumnes.CAMPO_CURSO;
 import static com.l.marc.a3a.utilitat.utilitat_alumnes.CAMPO_EDAD;
@@ -38,7 +36,7 @@ public class registrar_alumno extends AppCompatActivity {
     }
 
     private void registrarAlumnos() {
-        baseDeDatos conexion= new baseDeDatos(this, "bd",null,1);
+        MyDBAdapter.baseDeDatos conexion= new MyDBAdapter.baseDeDatos(this, "bd",null,1);
         SQLiteDatabase db=conexion.getWritableDatabase();
 
         ContentValues values= new ContentValues();

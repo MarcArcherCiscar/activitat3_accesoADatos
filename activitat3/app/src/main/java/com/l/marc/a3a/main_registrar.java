@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.l.marc.a3a.base_de_datos.baseDeDatos;
-
 public class main_registrar extends AppCompatActivity {
 
     @Override
@@ -16,7 +14,7 @@ public class main_registrar extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        baseDeDatos conexion= new baseDeDatos(this, "bd",null,1);
+        MyDBAdapter.baseDeDatos conexion= new MyDBAdapter.baseDeDatos(this, "bd",null,1);
     }
 
     public void registrar_alumno(View view) {
